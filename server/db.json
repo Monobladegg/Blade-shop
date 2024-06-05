@@ -1,0 +1,343 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "title": "Games",
+      "products": [
+        {
+          "id": 1,
+          "title": "Assassin's Creed® III Remastered",
+          "price": 600,
+          "author": "Ubisoft",
+          "image": "./Assassin's Creed® III Remastered.jpg",
+          "rating": 8,
+          "popularity": 4
+        },
+        {
+          "id": 2,
+          "title": "Dota 2",
+          "price": 0,
+          "author": "Valve",
+          "image": "./Dota 2.jpg",
+          "rating": 5,
+          "popularity": 7
+        },
+        {
+          "id": 3,
+          "title": "Counter-Strike 2",
+          "price": 0,
+          "author": "Valve",
+          "image": "./Counter-Strike 2.jpg",
+          "rating": 7,
+          "popularity": 9
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Manga",
+      "products": [
+        {
+          "id": 1,
+          "title": "Jojo's Bizarre Adventure",
+          "price": 300,
+          "author": "Hirohiko Araki",
+          "image": "./Jojo's Bizarre Adventure.jpg",
+          "rating": 7,
+          "popularity": 5
+        },
+        {
+          "id": 2,
+          "title": "Naruto",
+          "price": 500,
+          "author": "Masashi Kishimoto",
+          "image": "./Naruto.jpg",
+          "rating": 9,
+          "popularity": 8
+        },
+        {
+          "id": 3,
+          "title": "Demon Slayer",
+          "price": 200,
+          "author": "Koyoharu Gotouge",
+          "image": "./Demon Slayer.jpg",
+          "rating": 5,
+          "popularity": 6
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Smartphones",
+      "products": [
+        {
+          "id": 1,
+          "title": "Iphone 15 Pro Max 256Gb",
+          "price": 52000,
+          "author": "Apple",
+          "image": "./Iphone 15 Pro Max 256Gb.jpg",
+          "rating": 6,
+          "popularity": 10
+        },
+        {
+          "id": 2,
+          "title": "Xiaomi Redmi Note 13 Pro 8/256Gb Midnight black",
+          "price": 500,
+          "author": "Xiaomi",
+          "image": "./Xiaomi Redmi Note 13 Pro 8/256Gb Midnight black.jpg",
+          "rating": 9,
+          "popularity": 8
+        },
+        {
+          "id": 3,
+          "title": "Samsung Galaxy M34 5G 8/128Gb Dark Blue",
+          "price": 200,
+          "author": "Samsung",
+          "image": "./Samsung Galaxy M34 5G 8/128Gb Dark Blue.jpg",
+          "rating": 7,
+          "popularity": 6
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Books",
+      "products": [
+        {
+          "id": 1,
+          "title": "451 градус за Фаренгейтом",
+          "price": 400,
+          "author": "Ray Bradbury",
+          "rating": 7,
+          "popularity": 7
+        },
+        {
+          "id": 2,
+          "title": "Маленький принц",
+          "price": 200,
+          "author": "Антуан де Сент-Екзюпері",
+          "rating": 4,
+          "popularity": 3
+        },
+        {
+          "id": 3,
+          "title": "Гарри Поттер и Кубок огня",
+          "price": 0,
+          "author": "J.K. Rowling",
+          "rating": 8,
+          "popularity": 9
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Clothes",
+      "products": [
+        {
+          "id": 1,
+          "title": "Кепка",
+          "price": 50,
+          "author": "H&M",
+          "rating": 7,
+          "popularity": 7
+        },
+        {
+          "id": 2,
+          "title": "Куртка",
+          "price": 0,
+          "author": "H&M",
+          "rating": 5,
+          "popularity": 8
+        },
+        {
+          "id": 3,
+          "title": "Шорты",
+          "price": 0,
+          "author": "H&M",
+          "rating": 8,
+          "popularity": 4
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "TVs",
+      "products": [
+        {
+          "id": 1,
+          "title": "Телевізор LG 55UR78006LK",
+          "price": 21000,
+          "author": "LG",
+          "rating": 5,
+          "popularity": 6
+        },
+        {
+          "id": 2,
+          "title": "Телевізор Hisense QLED 55E7KQ",
+          "price": 20000,
+          "author": "Hisense",
+          "rating": 8,
+          "popularity": 4
+        },
+        {
+          "id": 3,
+          "title": "Телевізор Samsung UE55CU8500UXUA",
+          "price": 0,
+          "author": "27000",
+          "rating": 6,
+          "popularity": 3
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Video cards",
+      "products": [
+        {
+          "id": 1,
+          "title": "ASUS PCI-Ex GeForce RTX 4090 ROG Strix OC Edition 24GB GDDR6X (384bit) (2640/21000) (2 x HDMI, 3 x DisplayPort) (ROG-STRIX-RTX4090-O24G-GAMING)",
+          "price": 90000,
+          "author": "Asus",
+          "rating": 3,
+          "popularity": 9
+        },
+        {
+          "id": 2,
+          "title": "Gigabyte RTX4060 8GB GDDR6 (GV-N4060GAMING OC-8GD)",
+          "price": 14700,
+          "author": "Gigabyte",
+          "rating": 6,
+          "popularity": 6
+        },
+        {
+          "id": 3,
+          "title": "GTX 1660 Super Phoenix ASUS 6GB",
+          "price": 0,
+          "author": "Asus",
+          "rating": 8,
+          "popularity": 7
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Processors",
+      "products": [
+        {
+          "id": 1,
+          "title": "Assassin's Creed® III Remastered",
+          "price": 600,
+          "author": "Ubisoft"
+        },
+        {
+          "id": 2,
+          "title": "Dota 2",
+          "price": 0,
+          "author": "Valve"
+        },
+        {
+          "id": 3,
+          "title": "Counter-Strike 2",
+          "price": 0,
+          "author": "Valve"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Monitors",
+      "products": [
+        {
+          "id": 1,
+          "title": "Assassin's Creed® III Remastered",
+          "price": 600,
+          "author": "Ubisoft"
+        },
+        {
+          "id": 2,
+          "title": "Dota 2",
+          "price": 0,
+          "author": "Valve"
+        },
+        {
+          "id": 3,
+          "title": "Counter-Strike 2",
+          "price": 0,
+          "author": "Valve"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Sport",
+      "products": [
+        {
+          "id": 1,
+          "title": "Assassin's Creed® III Remastered",
+          "price": 600,
+          "author": "Ubisoft"
+        },
+        {
+          "id": 2,
+          "title": "Dota 2",
+          "price": 0,
+          "author": "Valve"
+        },
+        {
+          "id": 3,
+          "title": "Counter-Strike 2",
+          "price": 0,
+          "author": "Valve"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Drinks",
+      "products": [
+        {
+          "id": 1,
+          "title": "Assassin's Creed® III Remastered",
+          "price": 600,
+          "author": "Ubisoft"
+        },
+        {
+          "id": 2,
+          "title": "Dota 2",
+          "price": 0,
+          "author": "Valve"
+        },
+        {
+          "id": 3,
+          "title": "Counter-Strike 2",
+          "price": 0,
+          "author": "Valve"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Food",
+      "products": [
+        {
+          "id": 1,
+          "title": "Assassin's Creed® III Remastered",
+          "price": 600,
+          "author": "Ubisoft"
+        },
+        {
+          "id": 2,
+          "title": "Dota 2",
+          "price": 0,
+          "author": "Valve"
+        },
+        {
+          "id": 3,
+          "title": "Counter-Strike 2",
+          "price": 0,
+          "author": "Valve"
+        }
+      ]
+    }
+  ]
+}
