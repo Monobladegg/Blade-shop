@@ -11,8 +11,9 @@ const Header = ({ db, active }: Props) => {
   return (
     <div className={s.nav}>
       <Link to="/">
-        <button className={active === 0 ? s.active : ""}>Home</button>
+        <h2 className={s.title}>Blade-shop!<br/>Магазин приколов!</h2>
       </Link>
+      <div className={s.buttons}>
       {db.map((item: any) => (
         <Link to={"/" + item.title.toLowerCase()} key={item.id}>
           <button className={active === item.id ? s.active : ""}>
@@ -20,6 +21,7 @@ const Header = ({ db, active }: Props) => {
           </button>
         </Link>
       ))}
+      </div>
     </div>
   );
 };

@@ -1,35 +1,63 @@
 .nav {
   display: flex;
+  outline: 1px solid #f1f1f1;
+  border-radius: 7px;
+  padding: 15px;
+  box-shadow: 0 0 15px #f1f1f1;
   flex-direction: column;
-  background-color: #141414;
-  width: 200px;
-
-  margin: 50px 0 0 50px;
+  justify-content: center;
+  align-items: center;
+  height: 572px;
   
-  button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #1f1f1f;
+  min-width: 280px;
+  max-width: 280px;
+  margin-inline: 50px;
+  
+  .title {
+    text-align: center;
     color: #f1f1f1;
-    background-color: #242424;
-    outline: 1px solid #f1f1f1;
-    border-radius: 5px;
-    font-size: 20px;
-    margin-block: 5px;
-    min-width: 150px;
-    max-width: 150px;
-    height: 30px;
-    cursor: pointer;
+    min-width: 250px;
+    max-width: 250px;
 
-    transition: background-color 150ms ease-in-out, box-shadow 150ms ease-in-out;
-    &:hover{
+    transition: color 150ms ease-in-out;
+    &:hover {
+      color: #acacac;
+    }
+  }
+
+  .buttons {
+    button{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #f1f1f1;
+      background-color: #2e2e2e;
+      outline: 1px solid #f1f1f1;
+      border-radius: 5px;
+      font-size: 20px;
+      margin-block: 9px;
+      min-width: 150px;
+      max-width: 150px;
+      height: 30px;
+      cursor: pointer;
+  
+      transition: background-color 150ms ease-in-out, box-shadow 150ms ease-in-out;
+      &:hover{
+        background-color: #383838;
+        box-shadow: 0 0 10px #f1f1f1;
+      }
+  
+    }
+    .active {
       background-color: #383838;
       box-shadow: 0 0 10px #f1f1f1;
     }
-
   }
-  .active {
-    background-color: #383838;
-    box-shadow: 0 0 10px #f1f1f1;
+}
+
+@media screen and (max-width: 930px) {
+  .nav {
+    display: none;
   }
 }

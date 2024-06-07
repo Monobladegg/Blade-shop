@@ -1,12 +1,12 @@
 import Layout from "src/lib/Layout";
 import Billboard from "src/components/Billboard";
-import { ICategory } from "src/types/db";
+import { ICategory } from "@/types/db";
 
 type Props = {
   db: ICategory[];
 }
 
-const GamesPage = ({db}: Props) => {
+const Home = ({db}: Props) => {
 
   return (
     <Layout db={db} active={0}>
@@ -15,4 +15,4 @@ const GamesPage = ({db}: Props) => {
   );
 };
 
-export default GamesPage;
+export default Home;

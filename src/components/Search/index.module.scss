@@ -1,0 +1,32 @@
+.input {
+  width: 60vw;
+  padding: 6px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #1b1b1b;
+  color: black;
+
+  transition: box-shadow 150ms ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 5px #f1f1f1;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 10px #f1f1f1;
+  }
+}
+
+@media (max-width: 930px) {
+  .input {
+    width: 300px;
+  }
+}
+
+@media (max-width: 460px) {
+  .input {
+    width: 200px;
+  }
+}

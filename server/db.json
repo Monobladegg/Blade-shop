@@ -183,7 +183,7 @@
           "id": 3,
           "title": "Телевізор Samsung UE55CU8500UXUA",
           "price": 0,
-          "author": "27000",
+          "author": "Samsung",
           "rating": 6,
           "popularity": 3
         }
@@ -191,7 +191,7 @@
     },
     {
       "id": 7,
-      "title": "Video cards",
+      "title": "Videocards",
       "products": [
         {
           "id": 1,
@@ -225,21 +225,27 @@
       "products": [
         {
           "id": 1,
-          "title": "Assassin's Creed® III Remastered",
-          "price": 600,
-          "author": "Ubisoft"
+          "title": "Intel Core i9-13900K",
+          "price": 58000,
+          "author": "Intel",
+          "rating": 9,
+          "popularity": 8
         },
         {
           "id": 2,
-          "title": "Dota 2",
-          "price": 0,
-          "author": "Valve"
+          "title": "AMD Ryzen 9 5900X",
+          "price": 45000,
+          "author": "AMD",
+          "rating": 8,
+          "popularity": 7
         },
         {
           "id": 3,
-          "title": "Counter-Strike 2",
-          "price": 0,
-          "author": "Valve"
+          "title": "Intel Core i5-12600K",
+          "price": 30000,
+          "author": "Intel",
+          "rating": 7,
+          "popularity": 6
         }
       ]
     },
@@ -249,21 +255,27 @@
       "products": [
         {
           "id": 1,
-          "title": "Assassin's Creed® III Remastered",
-          "price": 600,
-          "author": "Ubisoft"
+          "title": "Dell UltraSharp U2723QE",
+          "price": 20000,
+          "author": "Dell",
+          "rating": 9,
+          "popularity": 8
         },
         {
           "id": 2,
-          "title": "Dota 2",
-          "price": 0,
-          "author": "Valve"
+          "title": "Samsung Odyssey G7",
+          "price": 25000,
+          "author": "Samsung",
+          "rating": 8,
+          "popularity": 7
         },
         {
           "id": 3,
-          "title": "Counter-Strike 2",
-          "price": 0,
-          "author": "Valve"
+          "title": "LG UltraFine 4K",
+          "price": 30000,
+          "author": "LG",
+          "rating": 7,
+          "popularity": 6
         }
       ]
     },
@@ -273,21 +285,27 @@
       "products": [
         {
           "id": 1,
-          "title": "Assassin's Creed® III Remastered",
-          "price": 600,
-          "author": "Ubisoft"
+          "title": "Football",
+          "price": 1000,
+          "author": "Adidas",
+          "rating": 9,
+          "popularity": 9
         },
         {
           "id": 2,
-          "title": "Dota 2",
-          "price": 0,
-          "author": "Valve"
+          "title": "Basketball",
+          "price": 1500,
+          "author": "Nike",
+          "rating": 8,
+          "popularity": 8
         },
         {
           "id": 3,
-          "title": "Counter-Strike 2",
-          "price": 0,
-          "author": "Valve"
+          "title": "Tennis Racket",
+          "price": 2000,
+          "author": "Wilson",
+          "rating": 7,
+          "popularity": 7
         }
       ]
     },
@@ -297,21 +315,27 @@
       "products": [
         {
           "id": 1,
-          "title": "Assassin's Creed® III Remastered",
-          "price": 600,
-          "author": "Ubisoft"
+          "title": "Coca Cola",
+          "price": 50,
+          "author": "Coca Cola Company",
+          "rating": 9,
+          "popularity": 10
         },
         {
           "id": 2,
-          "title": "Dota 2",
-          "price": 0,
-          "author": "Valve"
+          "title": "Pepsi",
+          "price": 50,
+          "author": "PepsiCo",
+          "rating": 8,
+          "popularity": 9
         },
         {
           "id": 3,
-          "title": "Counter-Strike 2",
-          "price": 0,
-          "author": "Valve"
+          "title": "Fanta",
+          "price": 50,
+          "author": "Coca Cola Company",
+          "rating": 7,
+          "popularity": 8
         }
       ]
     },
@@ -321,21 +345,27 @@
       "products": [
         {
           "id": 1,
-          "title": "Assassin's Creed® III Remastered",
-          "price": 600,
-          "author": "Ubisoft"
+          "title": "Pizza",
+          "price": 500,
+          "author": "Domino's",
+          "rating": 9,
+          "popularity": 10
         },
         {
           "id": 2,
-          "title": "Dota 2",
-          "price": 0,
-          "author": "Valve"
+          "title": "Burger",
+          "price": 300,
+          "author": "McDonald's",
+          "rating": 8,
+          "popularity": 9
         },
         {
           "id": 3,
-          "title": "Counter-Strike 2",
-          "price": 0,
-          "author": "Valve"
+          "title": "Sushi",
+          "price": 400,
+          "author": "Sushiya",
+          "rating": 7,
+          "popularity": 8
         }
       ]
     }

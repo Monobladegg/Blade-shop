@@ -6,13 +6,13 @@ type Props = {
   db: ICategory[];
 }
 
-const GamesPage = ({db}: Props) => {
+const MangaPage = ({db}: Props) => {
 
   return (
     <Layout db={db} active={0}>
-      <Billboard typeProducts={0} db={db} />
+      <Billboard typeProducts={1} db={db} />
     </Layout>
   );
 };
 
-export default GamesPage;
+export default MangaPage;

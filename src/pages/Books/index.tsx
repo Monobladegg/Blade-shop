@@ -1,28 +1,16 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
-import Nav from "src/components/Nav";
+import Layout from "src/lib/Layout";
+import { ICategory } from "@/types/db";
 
-const BooksPage = () => {
-  const [db, setDb] = useState([]);
+type Props = {
+  db: ICategory[];
+}
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const { data } = await axios.get("http://localhost:4200/categories");
-        setDb(data);
-        console.log(data);
-      } catch (e) {
-        console.error(e);
-      }
-    };
-
-    fetchData();
-  }, []);
+const BooksPage = ({db}: Props) => {
 
   return (
-    <div className="main">
-      <Nav db={db} active={4} />
-    </div>
+    <Layout db={db} active={4}>
+      123
+    </Layout>
   );
 };
 

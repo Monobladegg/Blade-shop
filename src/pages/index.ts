@@ -1,2 +1,16 @@
-export {default as BooksPage} from './Books';
-export {default as GamesPage} from './Games';
+export { default as SmartphonesPage } from "./Smartphones";
+export { default as ProccesorsPage  } from "./Proccesors";
+export { default as VideocardsPage  } from "./Videocards";
+export { default as MonitorsPage    } from "./Monitors";
+export { default as ClothesPage     } from "./Clothes";
+export { default as ProfilePage     } from "./auth/Profile";
+export { default as SignUpPage      } from "./auth/SignUp";
+export { default as SignInPage      } from "./auth/SignIn";
+export { default as DrinksPage      } from "./Drinks";
+export { default as BooksPage       } from "./Books";
+export { default as GamesPage       } from "./Games";
+export { default as MangaPage       } from "./Manga";
+export { default as SportPage       } from "./Sport";
+export { default as HomePage        } from "./Home";
+export { default as FoodPage        } from "./Food";
+export { default as TVsPage         } from "./TVs";
