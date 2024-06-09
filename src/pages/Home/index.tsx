@@ -1,18 +1,15 @@
 import Layout from "src/lib/Layout";
-import Billboard from "src/components/Billboard";
 import { ICategory } from "@/types/db";
+import { Cards } from "src/components/Cards";
 
 type Props = {
   db: ICategory[];
 }
 
-const Home = ({db}: Props) => {
-
+export const HomePage = ({db}: Props) => {
   return (
-    <Layout db={db} active={0}>
-      <Billboard typeProducts={0} db={db} />
+    <Layout db={db} active={0} billboard={true}>
+      <Cards db={db} />
     </Layout>
   );
 };
-
-export default Home;

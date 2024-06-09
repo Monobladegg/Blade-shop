@@ -4,10 +4,8 @@ type Props = {
   db: ICategory[];
 }
 
-const TVsPage = ({db}: Props) => {
+export const TVsPage = ({db}: Props) => {
   return (
     <div>TVsPage</div>
   )
 }
-
-export default TVsPage

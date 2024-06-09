@@ -1,0 +1,50 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+
+  gap: 10px;
+  h2 {
+    font-size: 36px;
+  }
+  input {
+    width: 400px;
+    font-size: 24px;
+    color: black;
+    font-weight: 600;
+    padding: 2px;
+    padding-left: 4px;
+    border: none;
+    box-shadow: 0 0 10px 1px #f1f1f1;
+    border-radius: 3px;
+    outline: none;
+
+    &::placeholder {
+      color: black;
+      opacity: 0.75;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  button {
+    color: black;
+    background-color: #f1f1f1;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px 0.5px #f1f1f1;
+    border-radius: 3px;
+    font-size: 24px;
+    width: 400px;
+  }
+  .error {
+    color: red;
+  }
+  .signUp {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 600;
+  }
+}

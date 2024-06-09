@@ -5,7 +5,7 @@ type Props = {
   db: ICategory[];
 }
 
-const BooksPage = ({db}: Props) => {
+export const BooksPage = ({db}: Props) => {
 
   return (
     <Layout db={db} active={4}>
@@ -13,5 +13,3 @@ const BooksPage = ({db}: Props) => {
     </Layout>
   );
 };
-
-export default BooksPage;

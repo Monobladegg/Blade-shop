@@ -2,12 +2,15 @@ import { useState, FormEvent } from "react";
 import { ICategory } from "src/types/db";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "src/auth/firebase";
+import Layout from "src/lib/Layout";
+import s from "./index.module.scss";
+import { Link } from "react-router-dom";
 
 type Props = {
-  db: ICategory;
+  db: ICategory[];
 };
 
-const SignUpPage = ({ db }: Props) => {
+export const SignUpPage = ({ db }: Props) => {
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const [confirmPassword, setConfirmPassword] = useState<string>("");
@@ -24,6 +27,7 @@ const SignUpPage = ({ db }: Props) => {
     createUserWithEmailAndPassword(auth, email, password)
       .then((user) => {
         console.log(user)
+        setError("");
         setEmail("");
         setPassword("");
         setConfirmPassword("");
@@ -34,9 +38,9 @@ const SignUpPage = ({ db }: Props) => {
   };
 
   return (
-    <div>
-      <form onSubmit={Register}>
-        <h2>Create account</h2>
+    <Layout db={db} active={0} nav={false}>
+      <form className={s.form} onSubmit={Register}>
+        <h2>Створити аккаунт</h2>
         <input
           type="email"
           placeholder="Електронна пошта"
@@ -44,21 +48,21 @@ const SignUpPage = ({ db }: Props) => {
           value={email}
         />
         <input
-          type="password"
+          type="text"
           placeholder="Пароль"
           onChange={(e) => setPassword(e.target.value)}
           value={password}
         />
         <input
-          type="password"
+          type="text"
           placeholder="Підтвердіть пароль"
           onChange={(e) => setConfirmPassword(e.target.value)}
           value={confirmPassword}
         />
-        <button>Create</button>
+        <button>Зареєструватися</button>
+        <p>У вас вже є аккаунт? <Link className={s.signIn} to="/auth/signIn">Вхід</Link></p>
+        {error && <p className={s.error}>{error}</p>}
       </form>
-    </div>
+    </Layout>
   );
 };
-
-export default SignUpPage;

@@ -2,9 +2,10 @@ import { useState, FormEvent } from "react";
 import { ICategory } from "src/types/db";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "src/auth/firebase";
+import Layout from "@/lib/Layout";
 
 type Props = {
-  db: ICategory;
+  db: ICategory[];
 };
 
 const SignUp = ({ db }: Props) => {
@@ -23,6 +24,7 @@ const SignUp = ({ db }: Props) => {
 
     createUserWithEmailAndPassword(auth, email, password)
       .then((user) => {
+        setError("");
         console.log(user)
         setEmail("");
         setPassword("");
@@ -34,7 +36,7 @@ const SignUp = ({ db }: Props) => {
   };
 
   return (
-    <div>
+    <Layout db={db} >
       <form onSubmit={Register}>
         <h2>Create account</h2>
         <input
@@ -57,7 +59,7 @@ const SignUp = ({ db }: Props) => {
         />
         <button>Create</button>
       </form>
-    </div>
+    </Layout>
   );
 };
 

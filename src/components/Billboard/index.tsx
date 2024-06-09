@@ -30,6 +30,7 @@ const Billboard = ({ db, typeProducts }: Props) => {
           className={s.img}
           src={db[typeProducts].products[active].image}
           alt="billboard"
+          title="billboard"
         />
       </div>
       <div className={s.description}>

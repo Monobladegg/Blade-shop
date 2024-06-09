@@ -1,13 +1,16 @@
-import { ICategory } from 'src/types/db'
+import Layout from "src/lib/Layout";
+import Billboard from "src/components/Billboard";
+import { ICategory } from "src/types/db";
 
 type Props = {
   db: ICategory[];
 }
 
-const SmartphonesPage = ({db}: Props) => {
-  return (
-    <div>SmartphonesPage</div>
-  )
-}
+export const SmartphonesPage = ({db}: Props) => {
 
-export default SmartphonesPage
+  return (
+    <Layout db={db} active={0}>
+      <Billboard typeProducts={2} db={db} />
+    </Layout>
+  );
+};
