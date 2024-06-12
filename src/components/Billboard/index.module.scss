@@ -1,5 +1,7 @@
 .billboard {
-  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   .main {
     .img {
       width: 1280px;

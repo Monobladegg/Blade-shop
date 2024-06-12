@@ -1,5 +1,5 @@
 import Layout from "src/lib/Layout";
-import { ICategory } from "@/types/db";
+import { ICategory } from "src/types/db";
 
 type Props = {
   db: ICategory[];
@@ -8,7 +8,7 @@ type Props = {
 export const BooksPage = ({db}: Props) => {
 
   return (
-    <Layout db={db} active={4}>
+    <Layout db={db} active={3} billboard={true}>
       123
     </Layout>
   );

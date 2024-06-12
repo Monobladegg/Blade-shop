@@ -1,40 +1,88 @@
-import { ICategory } from 'src/types/db';
+import { useState, useContext } from 'react';
+import { Card } from 'src/components/Cards/Card';
+import s from './index.module.scss';
+import { Modal } from '../shared/modal';
+import { AppContext } from 'src/App';
 
-type Props = {
-  db: ICategory[],
-};
+interface Props {
+  allProducts?: boolean;
+}
 
-export const Cards = ({ db }: Props) => {
-  // Check if db is defined and has at least two categories
-  if (!db || db.length <= 1) {
+export const Cards = ({allProducts = false}: Props) => {
+
+  const modalUseState = {
+    active: false,
+    text: "",
+    };
+    
+    const [modal, setModal] = useState(modalUseState);
+    const [text, setText] = useState("");
+    
+      const closeModal = () => {
+        setModal({ ...modal, active: false });
+      };
+
+  if (allProducts) {
+
+    const { allProducts } = useContext(AppContext);
+
+    return <div className={s.cards}>
+    {allProducts.map((_: any, index: number) => (
+      <Card
+        modal={modal}
+        setModal={setModal}
+        text={text}
+        setText={setText}
+        key={index}
+        active={index}
+        allProducts={true}
+      />
+    ))}
+    {modal.active ? (
+      <Modal
+        text={text}
+        type={modal.text}
+        typeColor="green"
+        closeModal={closeModal}
+      />
+    ) : null}
+  </div>;
+  }
+
+  const { categories } = useContext(AppContext);
+
+
+  if (!categories || categories.length <= 1) {
     return <div>No data available</div>;
   }
 
-  // Extract the category you want to display. Here, it's the second category in the db array.
-  const selectedCategory = db[1]; 
+  const selectedCategory = categories[1];
 
-  // Check if the selected category has products
   if (!selectedCategory.products || selectedCategory.products.length === 0) {
     return <div>No products available</div>;
   }
 
   return (
-    <div>
-      {selectedCategory.products.map((item, index) => (
-        <div key={index} className="card">
-          <div className="card-img">
-            <img
-              src={item.image}
-              alt={item.title}
-              title={item.title}
-              width={540}
-            />
-          </div>
-          <div className="card-title">
-            {item.title}
-          </div>
-        </div>
+    <div className={s.cards}>
+      {selectedCategory.products.map((_: any, index: number) => (
+        <Card
+          key={index}
+          text={text}
+          setText={setText}
+          modal={modal}
+          setModal={setModal}
+          category={0}
+          active={index}
+        />
       ))}
+      {modal.active ? (
+        <Modal
+          text={text}
+          type={modal.text}
+          typeColor="green"
+          closeModal={closeModal}
+        />
+      ) : null}
     </div>
   );
 };

@@ -1,15 +1,10 @@
 import Layout from "src/lib/Layout";
-import { ICategory } from "@/types/db";
 import { Cards } from "src/components/Cards";
 
-type Props = {
-  db: ICategory[];
-}
-
-export const HomePage = ({db}: Props) => {
+export const HomePage = () => {
   return (
-    <Layout db={db} active={0} billboard={true}>
-      <Cards db={db} />
+    <Layout active={0} billboard={true}>
+      <Cards allProducts={true} />
     </Layout>
   );
 };

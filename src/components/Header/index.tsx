@@ -1,17 +1,12 @@
 import s from "./index.module.scss";
 import Search from "src/components/Search";
-import { ICategory } from "src/types/db";
 
 import { FaRegUserCircle } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import { TiDocumentText } from "react-icons/ti";
 import { Link } from "react-router-dom";
 
-type Props = {
-  db: ICategory[];
-};
-
-const Header = ({ db }: Props) => {
+const Header = () => {
   return (
     <div className={s.header}>
       <div className={s.left}>
@@ -20,7 +15,7 @@ const Header = ({ db }: Props) => {
         </Link>
       </div>
       <div className={s.center}>
-        <Search db={db} />
+        <Search />
       </div>
       <div className={s.right}>
         <Link to="/profile" className={s.element}>

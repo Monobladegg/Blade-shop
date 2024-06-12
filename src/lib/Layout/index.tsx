@@ -5,21 +5,21 @@ import Billboard from "src/components/Billboard";
 
 type Props = {
   children: React.ReactNode;
-  db: ICategory[];
   active?: number;
   nav?: boolean;
   header?: boolean;
   billboard?: boolean;
 };
 
-const Layout = ({ children, active = 0, db, nav = true, header = true, billboard = false }: Props) => {
+const Layout = ({ children, active = 0, nav = true, header = true, billboard = false }: Props) => {
+
   return (
     <div className="layout">
-      {header && <Header db={db} />}
+      {header && <Header />}
       <div className="main">
-        {nav && <Nav db={db} active={active} />}
+        {nav && <Nav active={active+1} />}
         <div className="content">
-          {billboard && <Billboard typeProducts={active} db={db} />}
+          {billboard && <Billboard category={active} />}
           {children}
           </div>
       </div>

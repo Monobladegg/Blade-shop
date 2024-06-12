@@ -1,16 +1,9 @@
 import Layout from "src/lib/Layout";
-import Billboard from "src/components/Billboard";
-import { ICategory } from "src/types/db";
 
-type Props = {
-  db: ICategory[];
-}
-
-export const SmartphonesPage = ({db}: Props) => {
+export const SmartphonesPage = () => {
 
   return (
-    <Layout db={db} active={0}>
-      <Billboard typeProducts={2} db={db} />
+    <Layout active={2} billboard={true}>
     </Layout>
   );
 };

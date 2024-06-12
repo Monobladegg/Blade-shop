@@ -5,6 +5,7 @@
       "title": "Games",
       "products": [
         {
+          "parentId": 1,
           "id": 1,
           "title": "Assassin's Creed® III Remastered",
           "price": 600,
@@ -14,15 +15,17 @@
           "popularity": 4
         },
         {
+          "parentId": 2,
           "id": 2,
           "title": "Dota 2",
           "price": 0,
           "author": "Valve",
           "image": "./Dota 2.jpg",
-          "rating": 5,
+          "rating": 0,
           "popularity": 7
         },
         {
+          "parentId": 3,
           "id": 3,
           "title": "Counter-Strike 2",
           "price": 0,
@@ -38,6 +41,7 @@
       "title": "Manga",
       "products": [
         {
+          "parentId": 4,
           "id": 1,
           "title": "Jojo's Bizarre Adventure",
           "price": 300,
@@ -47,6 +51,7 @@
           "popularity": 5
         },
         {
+          "parentId": 5,
           "id": 2,
           "title": "Naruto",
           "price": 500,
@@ -56,6 +61,7 @@
           "popularity": 8
         },
         {
+          "parentId": 6,
           "id": 3,
           "title": "Demon Slayer",
           "price": 200,
@@ -71,6 +77,7 @@
       "title": "Smartphones",
       "products": [
         {
+          "parentId": 7,
           "id": 1,
           "title": "Iphone 15 Pro Max 256Gb",
           "price": 52000,
@@ -80,6 +87,7 @@
           "popularity": 10
         },
         {
+          "parentId": 8,
           "id": 2,
           "title": "Xiaomi Redmi Note 13 Pro 8-256Gb Midnight black",
           "price": 500,
@@ -89,6 +97,7 @@
           "popularity": 8
         },
         {
+          "parentId": 9,
           "id": 3,
           "title": "Samsung Galaxy M34 5G 8-128Gb Dark Blue",
           "price": 200,
@@ -104,6 +113,7 @@
       "title": "Books",
       "products": [
         {
+          "parentId": 10,
           "id": 1,
           "title": "451 градус за Фаренгейтом",
           "price": 400,
@@ -113,6 +123,7 @@
           "popularity": 7
         },
         {
+          "parentId": 11,
           "id": 2,
           "title": "Маленький принц",
           "price": 200,
@@ -122,6 +133,7 @@
           "popularity": 3
         },
         {
+          "parentId": 12,
           "id": 3,
           "title": "Гарри Поттер и Кубок огня",
           "price": 0,
@@ -137,6 +149,7 @@
       "title": "Clothes",
       "products": [
         {
+          "parentId": 13,
           "id": 1,
           "title": "Кепка",
           "price": 50,
@@ -146,6 +159,7 @@
           "popularity": 7
         },
         {
+          "parentId": 14,
           "id": 2,
           "title": "Куртка",
           "price": 0,
@@ -155,6 +169,7 @@
           "popularity": 8
         },
         {
+          "parentId": 15,
           "id": 3,
           "title": "Шорты",
           "price": 0,
@@ -170,6 +185,7 @@
       "title": "TVs",
       "products": [
         {
+          "parentId": 16,
           "id": 1,
           "title": "Телевізор LG 55UR78006LK",
           "price": 21000,
@@ -179,6 +195,7 @@
           "popularity": 6
         },
         {
+          "parentId": 17,
           "id": 2,
           "title": "Телевізор Hisense QLED 55E7KQ",
           "price": 20000,
@@ -188,6 +205,7 @@
           "popularity": 4
         },
         {
+          "parentId": 18,
           "id": 3,
           "title": "Телевізор Samsung UE55CU8500UXUA",
           "price": 19000,
@@ -203,6 +221,7 @@
       "title": "Videocards",
       "products": [
         {
+          "parentId": 19,
           "id": 1,
           "title": "ASUS PCI-Ex GeForce RTX 4090 ROG Strix OC Edition 24GB GDDR6X (384bit) (2640/21000) (2 x HDMI, 3 x DisplayPort) (ROG-STRIX-RTX4090-O24G-GAMING)",
           "price": 90000,
@@ -212,6 +231,7 @@
           "popularity": 9
         },
         {
+          "parentId": 20,
           "id": 2,
           "title": "Gigabyte RTX4060 8GB GDDR6 (GV-N4060GAMING OC-8GD)",
           "price": 14700,
@@ -221,6 +241,7 @@
           "popularity": 6
         },
         {
+          "parentId": 21,
           "id": 3,
           "title": "GTX 1660 Super Phoenix ASUS 6GB",
           "price": 6000,
@@ -236,6 +257,7 @@
       "title": "Processors",
       "products": [
         {
+          "parentId": 22,
           "id": 1,
           "title": "Intel Core i9-13900K",
           "price": 58000,
@@ -245,6 +267,7 @@
           "popularity": 8
         },
         {
+          "parentId": 23,
           "id": 2,
           "title": "AMD Ryzen 9 5900X",
           "price": 45000,
@@ -254,6 +277,7 @@
           "popularity": 7
         },
         {
+          "parentId": 24,
           "id": 3,
           "title": "Intel Core i5-12600K",
           "price": 30000,
@@ -269,6 +293,7 @@
       "title": "Monitors",
       "products": [
         {
+          "parentId": 25,
           "id": 1,
           "title": "Dell UltraSharp U2723QE",
           "price": 20000,
@@ -278,6 +303,7 @@
           "popularity": 8
         },
         {
+          "parentId": 26,
           "id": 2,
           "title": "Samsung Odyssey G7",
           "price": 25000,
@@ -287,6 +313,7 @@
           "popularity": 7
         },
         {
+          "parentId": 27,
           "id": 3,
           "title": "LG UltraFine 4K",
           "price": 30000,
@@ -302,6 +329,7 @@
       "title": "Sport",
       "products": [
         {
+          "parentId": 28,
           "id": 1,
           "title": "ball",
           "price": 1000,
@@ -311,6 +339,7 @@
           "popularity": 9
         },
         {
+          "parentId": 29,
           "id": 2,
           "title": "Protein",
           "price": 1500,
@@ -320,6 +349,7 @@
           "popularity": 8
         },
         {
+          "parentId": 30,
           "id": 3,
           "title": "Tennis Racket",
           "price": 2000,
@@ -335,6 +365,7 @@
       "title": "Drinks",
       "products": [
         {
+          "parentId": 31,
           "id": 1,
           "title": "Coca Cola",
           "price": 50,
@@ -344,6 +375,7 @@
           "popularity": 10
         },
         {
+          "parentId": 32,
           "id": 2,
           "title": "Pepsi",
           "price": 50,
@@ -353,6 +385,7 @@
           "popularity": 9
         },
         {
+          "parentId": 33,
           "id": 3,
           "title": "Fanta",
           "price": 50,
@@ -368,6 +401,7 @@
       "title": "Food",
       "products": [
         {
+          "parentId": 34,
           "id": 1,
           "title": "Pizza",
           "price": 500,
@@ -377,6 +411,7 @@
           "popularity": 10
         },
         {
+          "parentId": 35,
           "id": 2,
           "title": "Burger",
           "price": 300,
@@ -386,6 +421,7 @@
           "popularity": 9
         },
         {
+          "parentId": 36,
           "id": 3,
           "title": "Sushi",
           "price": 400,
@@ -395,6 +431,368 @@
           "popularity": 8
         }
       ]
+    }
+  ],
+  "allProducts": [
+    {
+      "id": 1,
+      "title": "Assassin's Creed® III Remastered",
+      "price": 600,
+      "author": "Ubisoft",
+      "image": "./Assassin's Creed® III Remastered.jpg",
+      "rating": 8,
+      "popularity": 4,
+      "category": "Games"
+    },
+    {
+      "id": 2,
+      "title": "Dota 2",
+      "price": 0,
+      "author": "Valve",
+      "image": "./Dota 2.jpg",
+      "rating": 0,
+      "popularity": 7,
+      "category": "Games"
+    },
+    {
+      "id": 3,
+      "title": "Counter-Strike 2",
+      "price": 0,
+      "author": "Valve",
+      "image": "./Counter-Strike 2.jpg",
+      "rating": 7,
+      "popularity": 9,
+      "category": "Games"
+    },
+    {
+      "id": 4,
+      "title": "Jojo's Bizarre Adventure",
+      "price": 300,
+      "author": "Hirohiko Araki",
+      "image": "./Jojo's Bizarre Adventure.jpg",
+      "rating": 7,
+      "popularity": 5,
+      "category": "Manga"
+    },
+    {
+      "id": 5,
+      "title": "Naruto",
+      "price": 500,
+      "author": "Masashi Kishimoto",
+      "image": "./Naruto.jpg",
+      "rating": 9,
+      "popularity": 8,
+      "category": "Manga"
+    },
+    {
+      "id": 6,
+      "title": "Demon Slayer",
+      "price": 200,
+      "author": "Koyoharu Gotouge",
+      "image": "./Demon Slayer.jpg",
+      "rating": 5,
+      "popularity": 6,
+      "category": "Manga"
+    },
+    {
+      "id": 7,
+      "title": "Iphone 15 Pro Max 256Gb",
+      "price": 52000,
+      "author": "Apple",
+      "image": "./Iphone 15 Pro Max 256Gb.jpg",
+      "rating": 6,
+      "popularity": 10,
+      "category": "Smartphones"
+    },
+    {
+      "id": 8,
+      "title": "Xiaomi Redmi Note 13 Pro 8-256Gb Midnight black",
+      "price": 500,
+      "author": "Xiaomi",
+      "image": "./Xiaomi Redmi Note 13 Pro 8-256Gb Midnight black.jpg",
+      "rating": 9,
+      "popularity": 8,
+      "category": "Smartphones"
+    },
+    {
+      "id": 9,
+      "title": "Samsung Galaxy M34 5G 8-128Gb Dark Blue",
+      "price": 200,
+      "author": "Samsung",
+      "image": "./Samsung Galaxy M34 5G 8-128Gb Dark Blue.jpg",
+      "rating": 7,
+      "popularity": 6,
+      "category": "Smartphones"
+    },
+    {
+      "id": 10,
+      "title": "451 градус за Фаренгейтом",
+      "price": 400,
+      "author": "Ray Bradbury",
+      "image": "./451 градус за Фаренгейтом.jpg",
+      "rating": 7,
+      "popularity": 7,
+      "category": "Books"
+    },
+    {
+      "id": 11,
+      "title": "Маленький принц",
+      "price": 200,
+      "author": "Антуан де Сент-Екзюпері",
+      "image": "./Маленький принц.jpg",
+      "rating": 4,
+      "popularity": 3,
+      "category": "Books"
+    },
+    {
+      "id": 12,
+      "title": "Гарри Поттер и Кубок огня",
+      "price": 0,
+      "author": "J.K. Rowling",
+      "image": "./Гарри Поттер и Кубок огня.jpg",
+      "rating": 8,
+      "popularity": 9,
+      "category": "Books"
+    },
+    {
+      "id": 13,
+      "title": "Кепка",
+      "price": 50,
+      "author": "H&M",
+      "image": "./Кепка.jpg",
+      "rating": 7,
+      "popularity": 7,
+      "category": "Clothes"
+    },
+    {
+      "id": 14,
+      "title": "Куртка",
+      "price": 0,
+      "author": "H&M",
+      "image": "./Куртка.jpg",
+      "rating": 5,
+      "popularity": 8,
+      "category": "Clothes"
+    },
+    {
+      "id": 15,
+      "title": "Шорты",
+      "price": 0,
+      "author": "H&M",
+      "image": "./Шорты.jpg",
+      "rating": 8,
+      "popularity": 4,
+      "category": "Clothes"
+    },
+    {
+      "id": 16,
+      "title": "Телевізор LG 55UR78006LK",
+      "price": 21000,
+      "author": "LG",
+      "image": "./Телевізор LG 55UR78006LK.jpg",
+      "rating": 5,
+      "popularity": 6,
+      "category": "TVs"
+    },
+    {
+      "id": 17,
+      "title": "Телевізор Hisense QLED 55E7KQ",
+      "price": 20000,
+      "author": "Hisense",
+      "image": "./Телевізор Hisense QLED 55E7KQ.jpg",
+      "rating": 8,
+      "popularity": 4,
+      "category": "TVs"
+    },
+    {
+      "id": 18,
+      "title": "Телевізор Samsung UE55CU8500UXUA",
+      "price": 19000,
+      "author": "Samsung",
+      "image": "./Телевізор Samsung UE55CU8500UXUA.jpg",
+      "rating": 6,
+      "popularity": 3,
+      "category": "TVs"
+    },
+    {
+      "id": 19,
+      "title": "ASUS PCI-Ex GeForce RTX 4090 ROG Strix OC Edition 24GB GDDR6X (384bit) (2640/21000) (2 x HDMI, 3 x DisplayPort) (ROG-STRIX-RTX4090-O24G-GAMING)",
+      "price": 90000,
+      "author": "Asus",
+      "image": "./ASUS PCI-Ex GeForce RTX 4090 ROG Strix OC Edition 24GB GDDR6X (384bit) (2640/21000) (2 x HDMI, 3 x DisplayPort) (ROG-STRIX-RTX4090-O24G-GAMING).jpg",
+      "rating": 3,
+      "popularity": 9,
+      "category": "VideoCards"
+    },
+    {
+      "id": 20,
+      "title": "Gigabyte RTX4060 8GB GDDR6 (GV-N4060GAMING OC-8GD)",
+      "price": 14700,
+      "author": "Gigabyte",
+      "image": "./Gigabyte RTX4060 8GB GDDR6 (GV-N4060GAMING OC-8GD).jpg",
+      "rating": 6,
+      "popularity": 6,
+      "category": "VideoCards"
+    },
+    {
+      "id": 21,
+      "title": "GTX 1660 Super Phoenix ASUS 6GB",
+      "price": 6000,
+      "author": "Asus",
+      "image": "./GTX 1660 Super Phoenix ASUS 6GB.jpg",
+      "rating": 8,
+      "popularity": 7,
+      "category": "VideoCards"
+    },
+    {
+      "id": 22,
+      "title": "Intel Core i9-13900K",
+      "price": 58000,
+      "author": "Intel",
+      "image": "./Intel Core i9-13900K.jpg",
+      "rating": 9,
+      "popularity": 8,
+      "category": "Processors"
+    },
+    {
+      "id": 23,
+      "title": "AMD Ryzen 9 5900X",
+      "price": 45000,
+      "author": "AMD",
+      "image": "./AMD Ryzen 9 5900X.jpg",
+      "rating": 8,
+      "popularity": 7,
+      "category": "Processors"
+    },
+    {
+      "id": 24,
+      "title": "Intel Core i5-12600K",
+      "price": 30000,
+      "author": "Intel",
+      "image": "./Intel Core i5-12600K.jpg",
+      "rating": 7,
+      "popularity": 6,
+      "category": "Processors"
+    },
+    {
+      "id": 25,
+      "title": "Dell UltraSharp U2723QE",
+      "price": 20000,
+      "author": "Dell",
+      "image": "./Dell UltraSharp U2723QE.jpg",
+      "rating": 9,
+      "popularity": 8,
+      "category": "Monitors"
+    },
+    {
+      "id": 26,
+      "title": "Samsung Odyssey G7",
+      "price": 25000,
+      "author": "Samsung",
+      "image": "./Samsung Odyssey G7.jpg",
+      "rating": 8,
+      "popularity": 7,
+      "category": "Monitors"
+    },
+    {
+      "id": 27,
+      "title": "LG UltraFine 4K",
+      "price": 30000,
+      "author": "LG",
+      "image": "./LG UltraFine 4K.jpg",
+      "rating": 7,
+      "popularity": 6,
+      "category": "Monitors"
+    },
+    {
+      "id": 28,
+      "title": "ball",
+      "price": 1000,
+      "author": "Adidas",
+      "image": "./ball.jpg",
+      "rating": 9,
+      "popularity": 9,
+      "category": "Sport"
+    },
+    {
+      "id": 29,
+      "title": "Protein",
+      "price": 1500,
+      "author": "Nike",
+      "image": "./Protein.jpg",
+      "rating": 8,
+      "popularity": 8,
+      "category": "Sport"
+    },
+    {
+      "id": 30,
+      "title": "Tennis Racket",
+      "price": 2000,
+      "author": "Wilson",
+      "image": "./Tennis Racket.jpg",
+      "rating": 7,
+      "popularity": 7,
+      "category": "Sport"
+    },
+    {
+      "id": 31,
+      "title": "Coca Cola",
+      "price": 50,
+      "author": "Coca Cola Company",
+      "image": "./Coca Cola.jpg",
+      "rating": 9,
+      "popularity": 10,
+      "category": "Drinks"
+    },
+    {
+      "id": 32,
+      "title": "Pepsi",
+      "price": 50,
+      "author": "PepsiCo",
+      "image": "./Pepsi.jpg",
+      "rating": 8,
+      "popularity": 9,
+      "category": "Drinks"
+    },
+    {
+      "id": 33,
+      "title": "Fanta",
+      "price": 50,
+      "author": "Coca Cola Company",
+      "image": "./Fanta.jpg",
+      "rating": 7,
+      "popularity": 8,
+      "category": "Drinks"
+    },
+    {
+      "id": 34,
+      "title": "Pizza",
+      "price": 500,
+      "author": "Domino's",
+      "image": "./Pizza.jpg",
+      "rating": 9,
+      "popularity": 10,
+      "category": "Food"
+    },
+    {
+      "id": 35,
+      "title": "Burger",
+      "price": 300,
+      "author": "McDonald's",
+      "image": "./Burger.jpg",
+      "rating": 8,
+      "popularity": 9,
+      "category": "Food"
+    },
+    {
+      "id": 36,
+      "title": "Sushi",
+      "price": 400,
+      "author": "Sushiya",
+      "image": "./Sushi.jpg",
+      "rating": 7,
+      "popularity": 8,
+      "category": "Food"
     }
   ]
 }

@@ -1,15 +1,15 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import s from "./index.module.scss";
 import { FaCircle } from "react-icons/fa";
-import { ICategory } from "src/types/db";
+import { AppContext } from "src/App";
 
 interface Props {
-  db: ICategory[];
-  typeProducts: number;
+  category: number;
 }
 
-const Billboard = ({ db, typeProducts }: Props) => {
+const Billboard = ({ category }: Props) => {
   const [active, setActive] = useState<number>(0);
+  const {categories} = useContext(AppContext)
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -19,7 +19,7 @@ const Billboard = ({ db, typeProducts }: Props) => {
     return () => clearInterval(interval);
   }, []);
 
-  if (!db[typeProducts] || !db[typeProducts].products) {
+  if (!categories[category] || !categories[category].products) {
     return <div>Error: Invalid typeProducts index or no products available.</div>;
   }
 
@@ -28,9 +28,9 @@ const Billboard = ({ db, typeProducts }: Props) => {
       <div className={s.main}>
         <img
           className={s.img}
-          src={db[typeProducts].products[active].image}
+          src={categories[category].products[active].image}
           alt="billboard"
-          title="billboard"
+          title={categories[category].products[active].title}
         />
       </div>
       <div className={s.description}>

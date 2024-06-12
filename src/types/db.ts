@@ -5,6 +5,7 @@ export interface ICategory {
 }
 
 export interface IProduct {
+  parentId?: number;
   id: number;
   title: string;
   price: number;
@@ -12,4 +13,5 @@ export interface IProduct {
   rating: number;
   popularity: number;
   image?: string;
+  category?: string;
 }

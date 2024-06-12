@@ -1,3 +1,8 @@
-# Blade-Shop! Магазин хуйни!
-# React + Typescript + Redux-toolkit + Vite
-### Sass, React-router-dom, json-server, aliases, axios, react-icons
+
+### Stack
+
+- `React` + `Typescript` + `Redux Toolkit`
+- `React-router-dom` + `React-icons` + `Saas (modules)` + `Axios`
+- `Yarn` + `Aliases` + `JSON Server`
+- `Vite`
+- `GitHub Pages`

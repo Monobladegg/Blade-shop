@@ -12,5 +12,6 @@ export { GamesPage } from "./Games";
 export { MangaPage } from "./Manga";
 export { SportPage } from "./Sport";
 export { HomePage } from "./Home";
+export { CardPage } from "./Card";
 export { FoodPage } from "./Food";
 export { TVsPage } from "./TVs";
