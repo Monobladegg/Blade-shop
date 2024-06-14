@@ -14,15 +14,18 @@ type Props = {
   header?: boolean;
   billboard?: boolean;
   filter?: boolean;
+  sort?: number | null;
 };
 
-const Layout = ({ children, active = 0, nav = true, header = true, billboard = true, filter = true }: Props) => {
+const Layout = ({ children, active = 0, nav = true, header = true, billboard = true, filter = true, sort = null }: Props) => {
 
   const dispatch = useAppDispatch();
 
+  const params = new URLSearchParams(window.location.search);
+
   useEffect(() => {
     dispatch(fetchCategories());
-    dispatch(fetchAllProducts());
+    dispatch(fetchAllProducts({ search: params.get("search"), sort: params.get("sort") }));
   }, [dispatch]);
 
   return (
@@ -31,7 +34,7 @@ const Layout = ({ children, active = 0, nav = true, header = true, billboard = t
       <div className="main">
         <div className="sidebar">
         {nav && <Nav active={active+1} />}
-        {filter && <Filter />}
+        {filter && <Filter active={active}/>}
         </div>
         <div className="content">
           {billboard && <Billboard category={active} />}

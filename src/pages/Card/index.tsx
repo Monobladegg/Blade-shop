@@ -28,7 +28,7 @@ export const CardPage = () => {
   }
 
   return (
-    <Layout active={0}>
+    <Layout active={0} billboard={false}>
       <div className={s.card}>
         <div className={s.imgContainer}>
           <img
@@ -69,9 +69,11 @@ export const CardPage = () => {
           </div>
         </div>
       </div>
-      <button className={s.back} onClick={() => window.history.back()}>
+      <div className={s.back}>
+      <button onClick={() => window.history.back()}>
         <h5>Вернуться назад</h5>
       </button>
+      </div>
     </Layout>
   );
 };

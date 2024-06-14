@@ -4,6 +4,7 @@ import { FaCircle } from "react-icons/fa";
 import { useAppSelector } from "src/redux/store/hooks";
 import { RootState } from "src/redux/store";
 import { ICategory } from "src/types";
+import { Link } from "react-router-dom";
 
 interface Props {
   category: number;
@@ -28,14 +29,16 @@ const Billboard = ({ category }: Props) => {
 
   return (
     <div className={s.billboard}>
+        <Link to={`/${categories[category].products[active].id}`}>
       <div className={s.main}>
         <img
           className={s.img}
           src={categories[category].products[active].image}
           alt="billboard"
           title={categories[category].products[active].title}
-        />
+          />
       </div>
+          </Link>
       <div className={s.description}>
         <FaCircle
           size={20}
