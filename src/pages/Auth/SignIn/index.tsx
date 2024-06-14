@@ -1,16 +1,11 @@
 import { useState, FormEvent } from "react";
-import { ICategory } from "src/types/db";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "src/auth/firebase";
 import Layout from "src/lib/Layout";
 import s from "./index.module.scss";
 import { Link } from "react-router-dom";
 
-type Props = {
-  db: ICategory[];
-};
-
-export const SignInPage = ({ db }: Props) => {
+export const SignInPage = () => {
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const [error, setError] = useState<string>("");
@@ -37,7 +32,7 @@ export const SignInPage = ({ db }: Props) => {
   }
 
   return (
-    <Layout db={db} active={0} nav={false}>
+    <Layout active={0} nav={false}>
       <form className={s.form} onSubmit={Login}>
         <h2>Вхід</h2>
         <input

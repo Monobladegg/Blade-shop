@@ -1,15 +1,18 @@
-import { useEffect, useState, useContext } from "react";
+import { useEffect, useState } from "react";
 import s from "./index.module.scss";
 import { FaCircle } from "react-icons/fa";
-import { AppContext } from "src/App";
+import { useAppSelector } from "src/redux/store/hooks";
+import { RootState } from "src/redux/store";
+import { ICategory } from "src/types";
 
 interface Props {
   category: number;
 }
 
 const Billboard = ({ category }: Props) => {
+  const categories: ICategory[] = useAppSelector((state: RootState) => state.categories.categories);
+
   const [active, setActive] = useState<number>(0);
-  const {categories} = useContext(AppContext)
 
   useEffect(() => {
     const interval = setInterval(() => {

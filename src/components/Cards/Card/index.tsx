@@ -1,6 +1,7 @@
+import { useAppSelector } from "src/redux/store/hooks";
 import s from "./index.module.scss";
-import { useContext } from "react";
-import { AppContext } from "src/App";
+import { RootState } from "src/redux/store";
+import { ICategory, IProduct } from "src/types";
 
 interface Props {
   category?: number;
@@ -9,13 +10,16 @@ interface Props {
   setModal: React.Dispatch<React.SetStateAction<{ active: boolean; text: string }>>;
   text: string;
   setText: React.Dispatch<React.SetStateAction<string>>;
-  allProducts?: boolean;
+  allProductsStatus?: boolean;
 }
 
-export const Card = ({ category, active, modal, setModal, text, setText, allProducts = false }: Props) => {
+export const Card = ({ category, active, modal, setModal, text, setText, allProductsStatus = false }: Props) => {
+
+  const useSelector = useAppSelector;
+
+  const allProducts: IProduct[] = useSelector((state: RootState) => state.allProducts.allProducts);
   
-  if (allProducts) {
-    const { allProducts } = useContext(AppContext);
+  if (allProductsStatus) {
 
     const goToCardPage = () => {
       window.location.href = `/${allProducts[active].id - 1}`;
@@ -64,7 +68,7 @@ export const Card = ({ category, active, modal, setModal, text, setText, allProd
     </div>
     );
   } else if (category !== undefined) {
-    const { categories } = useContext(AppContext);
+    const categories: ICategory[] = useSelector((state: RootState) => state.categories.categories);
     const goToCardPage = () => {
       window.location.href = `/${categories[category].products[active].parentId}`;
       };

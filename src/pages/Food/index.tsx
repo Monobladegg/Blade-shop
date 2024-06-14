@@ -1,11 +1,5 @@
-import { ICategory } from 'src/types/db'
+import Layout from "src/lib/Layout";
 
-type Props = {
-  db: ICategory[];
-}
-
-export const FoodPage = ({db}: Props) => {
-  return (
-    <div>FoodPage</div>
-  )
-}
+export const FoodPage = () => {
+  return <Layout active={11}>123</Layout>;
+};

@@ -1,12 +1,16 @@
-import { AppContext } from "src/App";
-import { useContext } from "react";
 import { useParams } from "react-router-dom";
 import s from "./index.module.scss";
 import Layout from "src/lib/Layout";
+import { useAppSelector } from "src/redux/store/hooks";
+import { RootState } from "src/redux/store";
+import { IProduct } from "src/types";
 
 export const CardPage = () => {
   const { cardId } = useParams();
-  const { allProducts } = useContext(AppContext);
+
+  const useSelector = useAppSelector
+
+  const allProducts: IProduct[] = useSelector((state: RootState) => state.allProducts.allProducts);
 
   const product = allProducts && allProducts[Number(cardId)];
 

@@ -1,14 +1,18 @@
-import { useState, useContext } from 'react';
+import { useState } from 'react';
 import { Card } from 'src/components/Cards/Card';
 import s from './index.module.scss';
 import { Modal } from '../shared/modal';
-import { AppContext } from 'src/App';
+import { useSelector } from 'react-redux';
+import { RootState } from 'src/redux/store';
+import { IProduct, ICategory } from 'src/types';
 
 interface Props {
-  allProducts?: boolean;
+  allProductsStatus?: boolean;
 }
 
-export const Cards = ({allProducts = false}: Props) => {
+export const Cards = ({allProductsStatus = false}: Props) => {
+
+  const allProducts: IProduct[] = useSelector((state: RootState) => state.allProducts.allProducts);
 
   const modalUseState = {
     active: false,
@@ -22,9 +26,7 @@ export const Cards = ({allProducts = false}: Props) => {
         setModal({ ...modal, active: false });
       };
 
-  if (allProducts) {
-
-    const { allProducts } = useContext(AppContext);
+  if (allProductsStatus) {
 
     return <div className={s.cards}>
     {allProducts.map((_: any, index: number) => (
@@ -35,7 +37,7 @@ export const Cards = ({allProducts = false}: Props) => {
         setText={setText}
         key={index}
         active={index}
-        allProducts={true}
+        allProductsStatus={true}
       />
     ))}
     {modal.active ? (
@@ -49,8 +51,7 @@ export const Cards = ({allProducts = false}: Props) => {
   </div>;
   }
 
-  const { categories } = useContext(AppContext);
-
+  const categories: ICategory[] = useSelector((state: RootState) => state.categories.categories);
 
   if (!categories || categories.length <= 1) {
     return <div>No data available</div>;

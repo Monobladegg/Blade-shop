@@ -2,16 +2,11 @@ import { useEffect, useState } from "react";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "src/auth/firebase";
 import { User } from "firebase/auth";
-import { ICategory } from "src/types/db";
 import Layout from "src/lib/Layout";
 import { Link } from "react-router-dom";
 import s from "./index.module.scss";
 
-type Props = {
-  db: ICategory[];
-};
-
-export const ProfilePage = ({ db }: Props) => {
+export const ProfilePage = () => {
   const [authUser, setAuthUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -43,7 +38,7 @@ export const ProfilePage = ({ db }: Props) => {
 
   if (loading) {
     return (
-      <Layout db={db} active={0} nav={false}>
+      <Layout active={0} nav={false}>
         <h3>Loading...</h3>
       </Layout>
     );
@@ -51,13 +46,13 @@ export const ProfilePage = ({ db }: Props) => {
 
   if (authUser) {
     return (
-      <Layout db={db} active={0} nav={false}>
+      <Layout active={0} nav={false}>
         <button onClick={userSignOut}>Sign out</button>
       </Layout>
     );
   } else {
     return (
-      <Layout db={db} active={0} nav={false}>
+      <Layout active={0} nav={false}>
         <div className={s.container}>
           <h3>Вы еще не зарегестрированы.</h3>
           <Link className={s.link} to="/auth/signUp">
