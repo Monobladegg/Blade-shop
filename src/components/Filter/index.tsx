@@ -1,7 +1,4 @@
 import s from "./index.module.scss";
-import { useSelector } from "react-redux";
-import { ICategory } from "src/types";
-import { RootState } from "src/redux/store";
 import { useAppDispatch } from "src/redux/store/hooks";
 import { fetchAllProducts } from "src/redux/slices/data/allProductsSlice";
 import { useState } from "react";
@@ -12,7 +9,6 @@ type Props = {
 
 const Filter = ({ active }: Props) => {
   const dispatch = useAppDispatch();
-  const categories: ICategory[] = useSelector((state: RootState) => state.categories.categories);
 
   const filterProducts = (filter: string) => {
     if (!asc) {

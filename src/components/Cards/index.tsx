@@ -10,7 +10,7 @@ interface Props {
   allProductsStatus?: boolean;
 }
 
-export const Cards = ({allProductsStatus = false}: Props) => {
+export const Cards = ({allProductsStatus = false,}: Props) => {
 
   const allProducts: IProduct[] = useSelector((state: RootState) => state.allProducts.allProducts);
 
@@ -20,7 +20,7 @@ export const Cards = ({allProductsStatus = false}: Props) => {
     };
     
     const [modal, setModal] = useState(modalUseState);
-    const [text, setText] = useState("");
+    const [text] = useState("");
     
       const closeModal = () => {
         setModal({ ...modal, active: false });
@@ -31,10 +31,8 @@ export const Cards = ({allProductsStatus = false}: Props) => {
     return <div className={s.cards}>
     {allProducts.map((_: any, index: number) => (
       <Card
-        modal={modal}
         setModal={setModal}
         text={text}
-        setText={setText}
         key={index}
         active={index}
         allProductsStatus={true}
@@ -69,8 +67,6 @@ export const Cards = ({allProductsStatus = false}: Props) => {
         <Card
           key={index}
           text={text}
-          setText={setText}
-          modal={modal}
           setModal={setModal}
           category={0}
           active={index}

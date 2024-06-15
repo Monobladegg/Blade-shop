@@ -1,4 +1,3 @@
-import React from 'react';
 import s from './index.module.scss';
 import { SlClose } from 'react-icons/sl';
 

@@ -6,14 +6,12 @@ import { ICategory, IProduct } from "src/types";
 interface Props {
   category?: number;
   active: number;
-  modal: { active: boolean; text: string };
   setModal: React.Dispatch<React.SetStateAction<{ active: boolean; text: string }>>;
   text: string;
-  setText: React.Dispatch<React.SetStateAction<string>>;
   allProductsStatus?: boolean;
 }
 
-export const Card = ({ category, active, modal, setModal, text, setText, allProductsStatus = false }: Props) => {
+export const Card = ({ category, active, setModal, text, allProductsStatus = false }: Props) => {
 
   const useSelector = useAppSelector;
 

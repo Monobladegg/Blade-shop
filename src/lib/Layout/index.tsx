@@ -17,7 +17,7 @@ type Props = {
   sort?: number | null;
 };
 
-const Layout = ({ children, active = 0, nav = true, header = true, billboard = true, filter = true, sort = null }: Props) => {
+const Layout = ({ children, active = 0, nav = true, header = true, billboard = true, filter = true }: Props) => {
 
   const dispatch = useAppDispatch();
 
@@ -25,7 +25,7 @@ const Layout = ({ children, active = 0, nav = true, header = true, billboard = t
 
   useEffect(() => {
     dispatch(fetchCategories());
-    dispatch(fetchAllProducts({ search: params.get("search"), sort: params.get("sort") }));
+    dispatch(fetchAllProducts({ sort: params.get("sort"), search: params.get("search") }));
   }, [dispatch]);
 
   return (
