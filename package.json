@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://blade-shop.vercel.app",
+  "homepage": "https://monobladegg.github.io/Blade-shop/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

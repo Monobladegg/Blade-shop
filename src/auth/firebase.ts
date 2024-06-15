@@ -1,21 +1,15 @@
-// Import the functions you need from the SDKs you need
 import { getAuth } from "firebase/auth";
 import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBF37l8Zj9D0ouQUErWnwvEvk7rdpa-q9U",
-  authDomain: "blade-shop.firebaseapp.com",
-  projectId: "blade-shop",
-  storageBucket: "blade-shop.appspot.com",
-  messagingSenderId: "955855672865",
-  appId: "1:955855672865:web:2b834303cb86719fc13560",
-  measurementId: "G-LDGTCF51NG"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
+export const auth = getAuth(app); 
