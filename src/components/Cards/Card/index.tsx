@@ -20,7 +20,7 @@ export const Card = ({ category, active, setModal, text, allProductsStatus = fal
   if (allProductsStatus) {
 
     const goToCardPage = () => {
-      window.location.href = `/${allProducts[active].id - 1}`;
+      window.location.href = `/blade-shop/${allProducts[active].id - 1}`;
     };
 
     return (

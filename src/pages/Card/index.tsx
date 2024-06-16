@@ -16,7 +16,7 @@ export const CardPage = () => {
 
   if (!product) {
     return (
-      <Layout active={0}>
+      <Layout active={0} billboard={false}>
         <center>
           <h1>
             Данные подгружаются. Если это происходит слишком долго, то скорее

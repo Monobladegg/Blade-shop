@@ -1,17 +1,33 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import axios from "axios";
 
 export interface FilterParams {
-  search: string | null;
-  sort: string | null;
+  sort?: string | null;
+  search?: string | null;
 }
+
+export interface AllProductsState {
+  allProducts: any[];
+  loading: boolean;
+  error: string | null;
+}
+
+const initialState: AllProductsState = {
+  allProducts: [],
+  loading: false,
+  error: null,
+};
 
 export const fetchAllProducts = createAsyncThunk(
   "data/fetchAllProducts",
   async ({ search, sort }: FilterParams, { rejectWithValue }) => {
     try {
-      const allProductsResponse =
-        await axios.get(`http://localhost:4200/allProducts?_sort=${sort}&_q=${search}&`);
+      const allProductsResponse = await axios.get(`http://localhost:4200/allProducts`, {
+        params: {
+          _sort: sort,
+          title: search,
+        },
+      });
       return { allProducts: allProductsResponse.data };
     } catch (err: any) {
       console.error(err);
@@ -22,13 +38,9 @@ export const fetchAllProducts = createAsyncThunk(
 
 const allProductsSlice = createSlice({
   name: "allProducts",
-  initialState: {
-    allProducts: [],
-    loading: false,
-    error: null,
-  },
+  initialState,
   reducers: {
-    setAllProducts: (state, action) => {
+    setAllProducts: (state, action: PayloadAction<any[]>) => {
       state.allProducts = action.payload;
     },
   },
@@ -38,13 +50,13 @@ const allProductsSlice = createSlice({
         state.loading = true;
         state.error = null;
       })
-      .addCase(fetchAllProducts.fulfilled, (state, action) => {
+      .addCase(fetchAllProducts.fulfilled, (state, action: PayloadAction<{ allProducts: any[] }>) => {
         state.loading = false;
         state.allProducts = action.payload.allProducts;
       })
-      .addCase(fetchAllProducts.rejected, (state) => {
+      .addCase(fetchAllProducts.rejected, (state, action: PayloadAction<any>) => {
         state.loading = false;
-        state.error = null;
+        state.error = action.payload as string;
       });
   },
 });

@@ -9,5 +9,5 @@ export default defineConfig({
       src: '/src'
     }
   },
-  base: '/blade-shop'
+  base: '/blade-shop/'
 })

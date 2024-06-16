@@ -4,7 +4,7 @@ import { Cards } from "src/components/Cards";
 export const HomePage = () => {
 
   return (
-    <Layout active={0} billboard={true}>
+    <Layout active={-1} billboard={true}>
       <Cards allProductsStatus={true} />
     </Layout>
   );

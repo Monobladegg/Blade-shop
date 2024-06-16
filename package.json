@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://monobladegg.github.io/Blade-shop/",
+  "homepage": "https://monobladegg.github.io/blade-shop/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

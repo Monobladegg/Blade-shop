@@ -14,7 +14,7 @@ const Filter = ({ active }: Props) => {
     if (!asc) {
       filter = `-${filter}`;
     }
-    dispatch(fetchAllProducts({ sort: filter, search: "" }));
+    dispatch(fetchAllProducts({ sort: filter }));
     setAsc(prev => !prev);
   };
 

@@ -3,7 +3,7 @@ import s from "./index.module.scss";
 import { FaCircle } from "react-icons/fa";
 import { useAppSelector } from "src/redux/store/hooks";
 import { RootState } from "src/redux/store";
-import { ICategory } from "src/types";
+import { ICategory, IProduct } from "src/types";
 import { Link } from "react-router-dom";
 
 interface Props {
@@ -12,6 +12,7 @@ interface Props {
 
 const Billboard = ({ category }: Props) => {
   const categories: ICategory[] = useAppSelector((state: RootState) => state.categories.categories);
+  const allProducts: IProduct[] = useAppSelector((state: RootState) => state.allProducts.allProducts);
 
   const [active, setActive] = useState<number>(0);
 
@@ -23,38 +24,39 @@ const Billboard = ({ category }: Props) => {
     return () => clearInterval(interval);
   }, []);
 
-  if (!categories[category] || !categories[category].products) {
-    return <div>Error: Invalid typeProducts index or no products available.</div>;
+  const isValidCategory = category !== -1 && categories[category] && categories[category].products;
+
+  const getProduct = () => {
+    if (category === -1) {
+      return allProducts[active];
+    } else if (isValidCategory) {
+      return categories[category].products[active];
+    }
+    return null;
+  };
+
+  const product = getProduct();
+
+  if (!product) {
+    return <div>Error: Invalid category index or no products available.</div>;
   }
 
   return (
     <div className={s.billboard}>
-        <Link to={`/${categories[category].products[active].id}`}>
-      <div className={s.main}>
-        <img
-          className={s.img}
-          src={categories[category].products[active].image}
-          alt="billboard"
-          title={categories[category].products[active].title}
-          />
-      </div>
-          </Link>
+      <Link to={`/${product.id -1}`}>
+        <div className={s.main}>
+          <img className={s.img} src={product.image} alt="billboard" title={product.title} />
+        </div>
+      </Link>
       <div className={s.description}>
-        <FaCircle
-          size={20}
-          className={`${s.circle} ${active === 0 && s.circleActive}`}
-          onClick={() => setActive(0)}
-        />
-        <FaCircle
-          size={20}
-          className={`${s.circle} ${active === 1 && s.circleActive}`}
-          onClick={() => setActive(1)}
-        />
-        <FaCircle
-          size={20}
-          className={`${s.circle} ${active === 2 && s.circleActive}`}
-          onClick={() => setActive(2)}
-        />
+        {[0, 1, 2].map((index) => (
+          <FaCircle
+            key={index}
+            size={20}
+            className={`${s.circle} ${active === index && s.circleActive}`}
+            onClick={() => setActive(index)}
+          />
+        ))}
       </div>
     </div>
   );

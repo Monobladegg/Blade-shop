@@ -794,5 +794,7 @@
       "popularity": 8,
       "category": "Food"
     }
-  ]
+  ],
+  "favorites": [],
+  "cart": []
 }
